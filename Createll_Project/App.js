@@ -33,7 +33,7 @@ constructor(props) {
 
  updateSort = (user) => { 
 this.setState({ user: user , loading: true})
-const url="http://192.168.1.48:3000/products?_sort="+user+"&_limit=102";
+const url="http://localhost:3000/products?_sort="+user+"&_limit=102"; //change "localhost" to ur pc Ip address
 fetch(url)
 .then(response => response.json())
 .then((responseJson)=> {
@@ -43,7 +43,6 @@ const date1 = new Date();
 const date2 = new Date(responseJson[i].date);
 const diffTime = Math.abs(date2 - date1);
 const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
-console.log("diffdays"+responseJson[i].price)
 var finalDate ;
  switch(diffDays){      
         case 1:      	            
@@ -88,7 +87,7 @@ var finalDate ;
 .catch(error=>console.log(error)) //to catch the errors if any
  };
 componentDidMount(){
-fetch("http://192.168.1.48:3000/products?_limit=102")
+fetch("http://localhost:3000/products?_limit=102")  //change "localhost" to ur pc Ip address 
 .then(response => response.json())
 .then((responseJson)=> {
  var data=[];
@@ -145,7 +144,6 @@ var finalDate ;
 };
  
   render() {
-	  console.log("loading"+this.state.loading)
 	   if(this.state.loading){
   return( 
     <View style={styles.loader}> 
