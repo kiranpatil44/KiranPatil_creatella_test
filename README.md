@@ -10,7 +10,7 @@ and run "npm start"
 commamnd it will start server
 
 #expo Installation
-Then go to KiranPatil_creatella_test/Createll_Project and run "npm install -g expo-cli" then "expo start" command it will start react native project you will get QR code in browser/command promt 
+Then go to KiranPatil_creatella_test/Createll_Project and run "npm install" then "expo start" command it will start react native project you will get QR code in browser/command promt 
 
 Install "Expo-client" on mobile and scan that QR code it will start project if not then Please change "localhost" from "URL" of "app.js" file 
 to your Laptop "Ip Address " otherwise it gives network authentication problem.
@@ -19,6 +19,10 @@ to your Laptop "Ip Address " otherwise it gives network authentication problem.
 1)componentDidMount
 2)updateSort
 
+# IF its still giving error "Network request failed"
+Please turn off your PC firewall because its stop acess to other network and Please make sure your PC and MOBILE in one network Like WIFI 
+
+#Do not close your "npm start" command prompt beacuse its start ur server
 
 # your mobile and Laptop should be in one network 
 
