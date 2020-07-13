@@ -9,6 +9,11 @@ Afer that "npm install -g"
 and run "npm start" 
 commamnd it will start server
 
+#how to start server
+Go to KiranPatil_creatella_test folder => and run "npm start"
+
+#Do not close your "npm start" command prompt beacuse its start ur server
+
 #expo Installation
 Then go to KiranPatil_creatella_test/Createll_Project and run "npm install" then "expo start" command it will start react native project you will get QR code in browser/command promt 
 
@@ -22,7 +27,6 @@ to your Laptop "Ip Address " otherwise it gives network authentication problem.
 # IF its still giving error "Network request failed"
 Please turn off your PC firewall because its stop acess to other network and Please make sure your PC and MOBILE in one network Like WIFI 
 
-#Do not close your "npm start" command prompt beacuse its start ur server
 
 # your mobile and Laptop should be in one network 
 
